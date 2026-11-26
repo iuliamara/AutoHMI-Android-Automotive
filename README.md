@@ -4,7 +4,7 @@ AutoHMI is an Android Automotive infotainment prototype built with **Kotlin and 
 
 The first milestone focuses on **Navigation and Driving Simulation**: plan a road route, simulate a drive, pause/resume, and save the completed trip.
 
-![AutoHMI running a Berlin DEMO drive with a collapsed sidebar, remaining distance, ETA and circular speedometer](docs/screenshots/portfolio/navigation-demo-overview.png)
+![AutoHMI running a Berlin DEMO drive with a collapsed sidebar, remaining distance, ETA and circular speedometer](docs/portofolio-media/navigation/light_demo_sim_running_no_sidebar.png)
 
 *Navigation DEMO on an Android Automotive emulator: a Berlin road route, a 30 km/h speedometer, and distance/ETA visible with the sidebar collapsed. The cyan simulated vehicle is separate from the blue device-location marker.*
 
@@ -21,17 +21,17 @@ The first milestone focuses on **Navigation and Driving Simulation**: plan a roa
 
 | Road-route planning · dark theme                                                                                                       | Running DEMO · expanded sidebar                                                                                                  |
 | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| ![Dark Navigation screen showing a calculated 1.3 km Berlin road route](docs/screenshots/portfolio/navigation-route-planning-dark.png) | ![Running DEMO with road geometry, remaining distance, ETA and progress](docs/screenshots/portfolio/navigation-demo-running.png) |
+| ![Dark Navigation screen showing a calculated 1.3 km Berlin road route](docs/portofolio-media/navigation/dark_plan_route.png) | ![Running DEMO with road geometry, remaining distance, ETA and progress](docs/portofolio-media/navigation/light_demo_simulation_running.png) |
 | OSRM road geometry, distance/duration, selected destination and explicit DEMO action.                                                  | Route progress and the speedometer update independently of device GPS.                                                           |
 
 | Pause and resume | Driving-endpoint arrival |
 | --- | --- |
-| ![Paused DEMO retains the cyan marker and remaining distance, with Resume and Exit actions](docs/screenshots/portfolio/navigation-demo-paused.png) | ![Completed DEMO showing zero speed, zero remaining distance and driving endpoint reached](docs/screenshots/portfolio/navigation-demo-arrived-dark.png) |
+| ![Paused DEMO retains the cyan marker and remaining distance, with Resume and Exit actions](docs/portofolio-media/navigation/light_demo_sim_paused.png) | ![Completed DEMO showing zero speed, zero remaining distance and driving endpoint reached](docs/portofolio-media/navigation/dark_destination_reached_no_sidebar.png) |
 | The last position is retained. ETA is suppressed while paused; Exit DEMO is a separate action. | The completed state persists until Exit DEMO or a new route. Reaching the road endpoint does not imply reaching an inaccessible selected point. |
 
 ### Saved DEMO trips
 
-![Automotive History screen with saved completed DEMO trips, distance, simulated duration, average speed and driving-endpoint gap details](docs/screenshots/portfolio/navigation-completed-trips-history.png)
+![Automotive History screen with saved completed DEMO trips, distance, simulated duration, average speed and driving-endpoint gap details](docs/portofolio-media/navigation/trips_saved_history.png)
 
 *Completed DEMO trips, newest first. Each card shows distance, simulated duration, average speed and completion time; the third card explains a gap between the road endpoint and selected destination.*
 
