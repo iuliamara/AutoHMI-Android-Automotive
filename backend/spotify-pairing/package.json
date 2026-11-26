@@ -1,0 +1,12 @@
+{
+  "name": "autohmi-spotify-pairing",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "devDependencies": { "wrangler": "4.166.0", "miniflare": "5.20261119.0-beta", "esbuild": "0.28.2" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "test:runtime": "node --test runtime/*.test.mjs",
+    "check": "node --check src/worker.mjs"
+  }
+}

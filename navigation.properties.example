@@ -1,0 +1,7 @@
+# Optional. Copy locally to navigation.properties (ignored by Git).
+# Leave blank until you own/are authorized to use an HTTPS OSRM-compatible server.
+# Do not put server API keys, tokens or user credentials here.
+# MapLibre/OpenFreeMap and foreground location do not require this configuration.
+# See docs/NAVIGATION_IMPLEMENTATION.md for self-hosting and an opt-in public demo,
+# including its privacy policy, attribution, rate limit and availability limitations.
+routing.osrmBaseUrl=

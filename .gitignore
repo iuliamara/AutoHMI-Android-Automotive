@@ -1,0 +1,54 @@
+# Android Studio, Gradle, Kotlin and generated output
+.idea/
+.obsidian/
+*.iml
+.gradle/
+.kotlin/
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+spotify.properties
+navigation.properties
+spotify-web-session.enc*
+app/libs/*.aar
+node_modules/
+.wrangler/
+.dev.vars
+.dev.vars.*
+wrangler.local.toml
+
+# Local credentials, signing keys and environment overrides
+*.jks
+*.keystore
+keystore.properties
+.env
+.env.*
+!.env.example
+
+# Internal development documentation
+/docs/*.md
+PROJECT_PROGRESS.md
+/docs/portofolio-media/README.md
+/docs/screenshots
+
+# OS/editor and temporary files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.hprof
+*.apk
+*.aab
+
+# Ignore other recordings; include the selected Navigation portfolio demo.
+/docs/portofolio-media/**/*.webm
+/docs/portofolio-media/**/*.mp4
+/docs/portofolio-media/**/*.mov
+!/docs/portofolio-media/navigation/recordings/Screen_recording_20261126_170404.webm
+
+# Keep Gradle wrapper binaries and exported Room schemas under version control.
+!gradle/wrapper/gradle-wrapper.jar
+
+/docs/screenshots/

@@ -1,0 +1,9 @@
+# Copy to spotify.properties (ignored by Git), then use your own Dashboard values.
+# These are public application identifiers, not client secrets. Never add tokens here.
+spotify.clientId=
+# First publish/verify your actual HTTPS host using docs/SPOTIFY_APP_LINKS.md.
+# Keep this blank until then. Gradle derives the App Link host/path from this value.
+spotify.redirectUri=
+# Optional Automotive QR relay: owned HTTPS origin only; see docs/SPOTIFY_QR_PAIRING.md.
+# Leave blank until you deploy and configure your own relay. Keep the browser redirect above.
+spotify.pairingBaseUrl=

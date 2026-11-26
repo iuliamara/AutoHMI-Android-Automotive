@@ -1,0 +1,31 @@
+name = "autohmi-spotify-pairing"
+main = "src/entry.mjs"
+compatibility_date = "2026-11-23"
+workers_dev = true
+
+# Deliberately disabled: OAuth callback query strings must not enter request logs.
+[observability]
+enabled = false
+
+[vars]
+# Configure the actual owned Worker origin in an ignored wrangler.local.toml.
+PUBLIC_ORIGIN = ""
+# Set SPOTIFY_CLIENT_ID using `wrangler secret put`; no client secret is used.
+
+[[durable_objects.bindings]]
+name = "PAIRINGS"
+class_name = "PairingSession"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["PairingSession"]
+
+[[ratelimits]]
+name = "REQUEST_LIMITER"
+namespace_id = "1001"
+simple = { limit = 120, period = 60 }
+
+[[ratelimits]]
+name = "CREATE_LIMITER"
+namespace_id = "1002"
+simple = { limit = 5, period = 60 }
